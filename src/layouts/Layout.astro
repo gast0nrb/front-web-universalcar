@@ -1,0 +1,18 @@
+---
+import Nav from "../components/home/Nav.astro"
+import "../styles/global.css"
+---
+
+<!doctype html>
+<html lang="es" class="scroll-smooth">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Universalcar</title>
+	</head>
+	<body class="bg-neutral-800">
+		<Nav/>
+		<slot />
+	</body>
+</html>

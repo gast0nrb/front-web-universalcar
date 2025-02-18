@@ -1,0 +1,35 @@
+---
+const {title="Diez de julio 413-A", adress="Avenida Diez de julio 413-A", phone=99399525, state="Santiago centro"} = Astro.props;
+---
+<div class="text-xs bg-zinc-900 drop-shadow-xl rounded-xs">
+    <div class="px-1 pt-1 rounded-t-xs" id="div-img">
+        <img src="/image.png" alt="">
+    </div>
+    <div id="title">
+        <h3 class="text-sm font-bold text-neutral-300 border-b-1 border-neutral-700">{title.toUpperCase()}</h3>
+    </div>
+    <div class="grid grid-cols-2 gap-1 pb-2" id="grid-info">
+    <div class="grid col-span-2">
+        <h3 class="text-zinc-300 font-bold">Direccion</h3>
+        <p class="text-neutral-600 font-bold">{adress}</p>
+    </div>
+    <div class="">
+        <h3 class="text-zinc-300 font-bold">Comúna</h3>
+        <p class="text-neutral-600 font-bold">{state}</p>
+    </div>
+    <div class="">
+        <h3 class="text-zinc-300 font-bold">Contacto</h3>
+        <p class="text-neutral-600 font-bold">{phone}</p>
+    </div>
+    <div class="">
+        <h3 class="text-zinc-300 font-bold">Horario</h3>
+        <p class="text-neutral-600 font-bold">9:30 ~ 18:30 (lun~vier) | 9:30 ~ 14:30 (sábado)</p>
+    </div>
+    <div class="grid mb-2">
+        <h3 class="text-zinc-300 font-bold">Como llegar</h3>
+        <a href="">
+            <img class="w-5 mx-auto" src="/waze.svg" alt="">
+            </a>
+    </div>
+    </div>
+</div>

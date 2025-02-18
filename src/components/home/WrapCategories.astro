@@ -1,0 +1,30 @@
+---
+import Category from "./Category.astro"
+import Card from "../Card.astro"
+---
+
+
+<section class="xs:mt-10 md:mt-30 w-10/12 mx-auto" id="products">
+    <h2 class="w-fit text-neutral-200 bg-neutral-900 px-4 rounded-xs mx-auto font-bold xs:text-xl md:text-3xl border-b-2 border-green-500">¿QUÉ VENDEMOS?</h2>
+    <div class="flex flex-wrap gap-1 justify-center">
+        <Category title="Repuestos" description=""/>
+        <Category title="Repuestos" description=""/>
+        <Category title="Repuestos" description=""/>
+        <Category title="Repuestos" description=""/>
+        <Category title="Repuestos" description=""/>
+        <Category title="Electronica" description=""/>
+        <Category title="Electronica" description=""/>
+        <Category title="Electronica" description=""/>
+        <Category title="Electronica" description=""/>
+        <Category title="Electronica" description=""/>
+        <Category title="Electronica" description=""/>
+        <Category title="Accesorios" description=""/>
+        <Category title="Herramientas" description=""/>
+        <Category title="Tunning" description=""/>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-2 mt-5">
+        <Card/>
+        <Card/>
+        <Card/>
+    </div>
+</section>
