@@ -2,6 +2,7 @@
 import Nav from "../components/home/Nav.astro"
 import Footer from "../components/home/Footer.astro"
 import "../styles/global.css"
+import Menu from "../components/home/Menu"
 ---
 
 <!doctype html>
@@ -14,6 +15,7 @@ import "../styles/global.css"
 	</head>
 	<body class="bg-neutral-800">
 		<Nav/>
+		<Menu client:load/>
 		<slot />
 		<Footer/>
 	</body>
