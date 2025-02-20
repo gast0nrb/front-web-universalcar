@@ -1,5 +1,4 @@
 ---
-import Nav from "../components/home/Nav.astro"
 import Footer from "../components/home/Footer.astro"
 import "../styles/global.css"
 import Menu from "../components/home/Menu"
@@ -14,7 +13,6 @@ import Menu from "../components/home/Menu"
 		<title>Universalcar</title>
 	</head>
 	<body class="bg-neutral-800">
-		<Nav/>
 		<Menu client:load/>
 		<slot />
 		<Footer/>

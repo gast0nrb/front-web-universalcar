@@ -5,7 +5,7 @@ import { useState } from "react"
 const WrapCategories = () => {
     const [category, setCategory] = useState(1)
     return (
-<section className="xs:mt-10 md:mt-30 w-10/12 mx-auto" id="products">
+<section className="xs:mt-10 md:mt-30 w-11/12 mx-auto" id="products">
     <h2 className="w-fit text-neutral-200 bg-neutral-900 px-4 rounded-xs mx-auto font-bold xs:text-xl md:text-3xl border-b-2 border-green-500">¿QUÉ VENDEMOS?</h2>
     <div className="flex flex-wrap gap-1 justify-center">
         <Category title="Repuestos" description="" id={1} category={category} setCategory={setCategory}/>
@@ -30,6 +30,7 @@ const WrapCategories = () => {
         <Card title="aaa"/>
         <Card title="aaaa"/>
     </div>
+        <p className="text-center text-xs text-zinc-600">Haz clic en una de las categorias para ver otros productos...</p>
 </section>
     )
 }
