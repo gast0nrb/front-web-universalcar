@@ -1,11 +1,9 @@
----
-const {title = "DEFAULT TITLe"} = Astro.props;
----
-
+function Card({title}){
+    return (
 <div class="bg-zinc-900 drop-shadow-xl rounded-xs pb-1 group">
     <div class="p-1">
-        <a href="#">
-        <img class="rounded-t-xs" src="/90008.png" alt="">
+        <a href="/producto">
+        <img class="rounded-t-xs" src="/90008.png" alt=""/>
         </a>
     </div>
     <div class="text-center border-b-1 border-zinc-700 group-hover:border-green-900 duration-150">
@@ -22,3 +20,5 @@ const {title = "DEFAULT TITLe"} = Astro.props;
         </div>
     </div>
 </div>
+)}
+export default Card;
