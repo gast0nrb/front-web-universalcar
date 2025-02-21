@@ -1,0 +1,15 @@
+---
+const {discount, price} = Astro.props;
+---
+
+    <div class="text-center w-11/12 mx-auto bg-neutral-900 drop-shadow-xl grid grid-cols-2 pb-1">
+        <h3 class="col-span-2 font-bold my-auto border-b-1 text-green-100 border-green-950 text-xs mt-0">VALORES</h3>
+        <div class="text-xs">
+            <h3 class="font-semibold text-neutral-300">Precio</h3>
+            <p class="text-zinc-500">${price}</p>
+        </div>
+        <div class="text-xs">
+            <h3 class="font-semibold text-neutral-300">Descuento</h3>
+            <p class="text-zinc-500">{discount}%</p>
+        </div>
+    </div>

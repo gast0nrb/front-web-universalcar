@@ -1,0 +1,22 @@
+---
+const {subcategory, attributes} = Astro.props;
+---
+<div class="w-11/12 mx-auto grid grid-cols-2 bg-neutral-900 rounded-xs pb-3">
+    <div class="text-center">
+        <h3 class="text-xs font-bold text-green-100 border-b-1 border-green-950 py-0.5">CATEGORIAS</h3>
+        <div class="text-xs">
+            <p class="font-semibold text-zinc-400">Subcategoria</p>
+            <a href="/category" class="text-zinc-500 underline hover:text-green-700">{subcategory.name}</a>
+            <p class="font-semibold text-zinc-400">Categoria</p>
+            <a href="/category" class="text-zinc-500 underline hover:text-green-700">{subcategory.Category.name}</a>
+        </div>
+    </div>
+    <div class="text-center text-xs">
+            <h3 class="text-green-100 font-semibold border-b-1 text-xs border-green-950 py-0.5">CARACTERISTICAS</h3></h3>
+            {attributes.map((at:any)=> 
+                <div>
+                    <p class="font-semibold text-zinc-400">{at.Attribute.name}</p>
+                    <p class="text-zinc-500">{at.value}</p>
+                </div>)}
+    </div>
+</div>
