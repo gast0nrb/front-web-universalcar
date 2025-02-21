@@ -1,14 +1,7 @@
 ---
-import Layout from '../layouts/Layout.astro';
 import Nav from "../components/home/Nav.astro"
-import WrapItems from "../components/home/WrapItems.astro"
-import WrapCategories from '../components/home/WrapCategories';
-import Where from '../components/home/Where.astro';
+import "../styles/global.css"
 ---
-
-<Layout>
+<body class="bg-zinc-900">
    <Nav/>
-   <WrapCategories client:load/>
-   <Where/>
-   <WrapItems/> 
-</Layout>
+</body>

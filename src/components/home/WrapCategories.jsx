@@ -6,7 +6,7 @@ const WrapCategories = () => {
     const [category, setCategory] = useState(1)
     return (
 <section className="xs:mt-10 md:mt-30 w-11/12 mx-auto" id="products">
-    <h2 className="w-fit text-neutral-200 bg-neutral-900 px-4 rounded-xs mx-auto font-bold xs:text-xl md:text-3xl border-b-2 border-green-500">¿QUÉ VENDEMOS?</h2>
+    <h2 className="w-fit text-neutral-200 bg-neutral-900 px-4 rounded-xs mx-auto font-bold xs:text-lg md:text-xl border-b-2 border-green-500">¿QUÉ VENDEMOS?</h2>
     <div className="flex flex-wrap gap-1 justify-center">
         <Category title="Repuestos" description="" id={1} category={category} setCategory={setCategory}/>
         <Category title="Repuestos" description="" id={2} category={category} setCategory={setCategory}/>

@@ -9,7 +9,7 @@ function Card({title}){
     <div className="text-center border-b-1 border-zinc-700 group-hover:border-green-900 duration-150">
         <h3 className="font-bold text-green-100">{title.toUpperCase()}</h3>
     </div>
-    <div className="grid grid-cols-2 text-center text-zinc-300 text-sm">
+    <div className="grid grid-cols-2 text-zinc-300 text-xs text-center">
         <div className="">
             <p>Descuento</p>
             <p>0%</p>

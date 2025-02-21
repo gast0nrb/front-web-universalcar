@@ -1,0 +1,12 @@
+---
+import Where from "../components/home/Where.astro";
+import WrapCategories from "../components/home/WrapCategories";
+import WrapItems from "../components/home/WrapItems.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+    <WrapCategories client:load/>
+    <Where/>
+    <WrapItems/>
+</Layout>
