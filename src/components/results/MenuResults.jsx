@@ -60,14 +60,14 @@ const MenuResults = ({filterText="Default filter text"}) => {
     const [textFilter, setTextFilter] = useState(filterText)
     const [useFilters, setUseFilters] = useState(false)
     return (
-   <div>
+   <div className="mb-5">
        <div className="flex gap-1">
          <h2 className="text-center ml-auto text-lg mb-1 text-zinc-200 font-bold tracking-widest">Filtros</h2>
     <button 
     onClick={(e)=> setUseFilters(!useFilters)}
     className="rounded-xs text-xs block mr-auto my-auto bg-slate-950 text-neutral-100 px-1">{!useFilters ? "Utilizar filtros" : "Ocultar filtros" }</button>
 </div> 
-           <form hidden={!useFilters} onSubmit={(e)=> e.preventDefault()} className="w-11/12 mx-auto grid grid-cols-3 text-xs gap-2 text-zinc-300 mb-5">
+           <form hidden={!useFilters} onSubmit={(e)=> e.preventDefault()} className="w-11/12 mx-auto grid grid-cols-3 text-xs gap-2 text-zinc-300 mb-5 bg-neutral-900 p-2 rounded-xs">
         <FilterByText filterText={textFilter} setTextFilter={setTextFilter}/>
         <ItemFilter title="Categorias" values={categories}/>
         <ItemFilter title="Subcategorias" values={subcategories}/>

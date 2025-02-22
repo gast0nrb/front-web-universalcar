@@ -3,9 +3,11 @@ import Layout from "../layouts/Layout.astro"
 import Header from "../components/product/Header.astro"
 import Product from "../components/product/Product.astro"
 import WrapCards from "../components/product/WrapCards"
+import Back from "../components/Back.astro"
 ---
 
 <Layout>
+  <Back/>
   <Product/>
   <WrapCards client:load/>
 </Layout>

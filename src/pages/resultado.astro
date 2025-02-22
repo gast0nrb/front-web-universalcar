@@ -1,0 +1,12 @@
+---
+import MenuResults from "../components/results/MenuResults"
+import Layout from "../layouts/Layout.astro"
+import WrapCards from "../components/WrapCards.astro" 
+import Back from "../components/Back.astro"
+---
+<Layout>
+    <Back/>
+    <h1 class="mb-3 w-fit mx-auto px-5 rounded-xs text-center font-bold tracking-widest text-xl bg-neutral-950 text-neutral-200 border-b-2 border-green-800">PRODUCTOS</h1>
+    <MenuResults client:load/>
+    <WrapCards/>
+</Layout>

@@ -1,6 +1,0 @@
-const HamburgerMenu = () => {
-    return (
-
-    )
-}
-
